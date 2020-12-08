@@ -3,14 +3,16 @@
   "description": "Сайт для компании УралТехДеталь",
   "dependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "react-scripts": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "serve": "serve -s build"
   },
   "browserslist": {
     "production": [
