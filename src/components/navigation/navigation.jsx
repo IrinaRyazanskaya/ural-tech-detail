@@ -1,6 +1,6 @@
 import './navigation.css';
 
-function Navigation(){
+function Navigation() {
     return (
         <nav className="navigation">
             <ul className="navigation__items">
