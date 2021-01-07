@@ -1,10 +1,10 @@
 import './footer.css';
-import iconPriceFooterSrc from './price-icon-footer.svg';
-import iconRequestFooterSrc from './request-icon-footer.svg';
-import iconCallFooterSrc from './call-icon-footer.svg';
-import iconPhoneFooterSrc from './phone-icon-footer.svg';
-import iconEmailFooterSrc from './email-icon-footer.svg';
-import iconPlaceholderFooterSrc from './placeholder-icon-footer.svg';
+import iconPriceSrc from './price-icon.svg';
+import iconRequestSrc from './request-icon.svg';
+import iconCallSrc from './call-icon.svg';
+import iconPhoneSrc from './phone-icon.svg';
+import iconEmailSrc from './email-icon.svg';
+import iconPlaceholderSrc from './placeholder-icon.svg';
 
 function Footer() {
     return(
@@ -13,7 +13,7 @@ function Footer() {
                 <a className="footer__action-link">
                     <img 
                         className="footer__action-icon"
-                        src={iconPriceFooterSrc}
+                        src={iconPriceSrc}
                         alt="Иконка прайс-листа"
                     />
                     <span className="footer__price-list">СМОТРЕТЬ ПРАЙС-ЛИСТ</span>
@@ -21,7 +21,7 @@ function Footer() {
                 <button className="footer__action-button">
                     <img 
                         className="footer__action-icon"
-                        src={iconRequestFooterSrc}
+                        src={iconRequestSrc}
                         alt="Иконка отправки заявки"
                     />
                     ОТПРАВИТЬ ЗАЯВКУ
@@ -29,7 +29,7 @@ function Footer() {
                 <button className="footer__action-button">
                     <img 
                         className="footer__action-icon"
-                        src={iconCallFooterSrc}
+                        src={iconCallSrc}
                         alt="Иконка заказа звонка"
                     />
                     ЗАКАЗАТЬ ЗВОНОК
@@ -49,7 +49,7 @@ function Footer() {
                 <div className="footer__phones">
                     <img 
                         className="footer__phones-icon"
-                        src={iconPhoneFooterSrc}
+                        src={iconPhoneSrc}
                         alt="Иконка телефоноа"
                     />
                     <div className="footer__phone-numbers">
@@ -64,10 +64,10 @@ function Footer() {
                 <div className="footer__emails">
                     <img 
                         className="footer__emails-icon"
-                        src={iconEmailFooterSrc}
+                        src={iconEmailSrc}
                         alt="Иконка email"
                     />
-                    <div className="footer__emails-address">
+                    <div className="footer__email-addresses">
                         <a className="footer__email-address" href="mailto:gruz_74@mail.ru">
                             gruz_74@mail.ru отдел продаж	
                         </a>
@@ -79,7 +79,7 @@ function Footer() {
                 <div className="footer__location">
                     <img 
                         className="footer__placeholder-icon"
-                        src={iconPlaceholderFooterSrc}
+                        src={iconPlaceholderSrc}
                         alt="Иконка места на карте"
                     />
                     <div className="footer__address">
