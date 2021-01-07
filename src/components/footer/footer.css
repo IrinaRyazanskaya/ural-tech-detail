@@ -1,0 +1,118 @@
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 240px;
+    background-color: #004578;
+}
+
+.footer__actions {
+    margin: 0 50px;
+}
+
+.footer__action-link,
+.footer__action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 212px;
+    height: 34px;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #004578;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #004578;
+}
+
+.footer__action-link:hover,
+.footer__action-button:hover {
+    border: rgba(0, 69, 120, 0.6);
+    color: rgba(0, 69, 120, 0.6);
+    cursor: pointer;
+}
+
+.footer__action-link:hover .footer__action-icon,
+.footer__action-button:hover .footer__action-icon {
+    opacity: 0.6;  
+}
+
+.footer__action-button {
+    margin-top: 18px;
+}
+
+.footer__action-icon {
+    display: block;
+    margin-right: 4px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+    height: 120px;
+}
+
+.footer__links + .footer__links {
+    margin-right: auto;
+}
+
+.footer__link {
+    font-size: 16px;
+    color: #fff;
+    text-underline-offset: 3px;
+}
+
+.footer__link:hover {
+    text-decoration: none;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 214px;
+    margin-right: 40px;
+}
+
+.footer__phone-number,
+.footer__email-address,
+.footer__address,
+.footer__map-link {
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+    text-underline-offset: 3px;
+}
+
+.footer__phones,
+.footer__emails,
+.footer__location {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer__phone-number,
+.footer__email-address,
+.footer__address {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__phone-number:hover,
+.footer__email-address:hover,
+.footer__map-link:hover {
+    text-decoration: none;
+}
+
+.footer__phones-icon,
+.footer__emails-icon,
+.footer__placeholder-icon {
+    margin: 4px 10px 0 0;
+}
+
+
