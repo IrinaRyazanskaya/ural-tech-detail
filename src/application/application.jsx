@@ -5,6 +5,7 @@ import { AboutPage } from '../pages/about';
 import { Footer } from '../components/footer';
 import { Contacts } from '../pages/contacts';
 import { Guarantees } from '../pages/guarantees-and-return';
+import { Details } from '../pages/company-details';
 
 function Application() {
     return (
@@ -12,7 +13,7 @@ function Application() {
             <Navigation />
             <Header />
             <Divider />
-            <Guarantees />
+            <Details />
             <Footer />
         </div>
     )

@@ -1,0 +1,28 @@
+.details {
+    color: #3E4B5B;
+    margin: 0 40px 0 40px;
+    padding-top: 16px;
+}
+
+.details__header {
+    font-size: 30px;
+}
+
+.details__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    height: 62px;
+    background-color: #F3F3F3;
+}
+
+.details__name {
+    margin-left: 24px;
+    width: 282px;
+}
+
+@media (max-width: 1084px) {
+    .details__container {
+        font-size: 14px;
+    }
+}
