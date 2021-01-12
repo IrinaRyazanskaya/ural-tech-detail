@@ -1,0 +1,59 @@
+.guarantees {
+    margin: 0 40px 0 40px;
+    padding-top: 6px;
+    color: #3E4B5B;
+}
+
+.guarantees__header {
+    margin: 30px 0 16px 0;
+    font-size: 30px;
+}
+
+.guarantees__facts {
+    margin: 6px 0;
+    line-height: 28px;
+}
+
+.guarantees__contacts-list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.guarantees__contacts-label {
+    line-height: 24px;
+}
+
+.guarantees__contact-link {
+    display: block;
+    margin: 10px 0;
+}
+
+.guarantees__download-link {
+    margin-left: 22px;
+}
+
+.guarantees__contact-link,
+.guarantees__download-link {
+    color: #2B88D8;
+    text-underline-offset: 3px;
+}
+
+.guarantees__contact-link:hover,
+.guarantees__download-link:hover {
+    text-decoration: none;
+}
+
+.guarantees__rules-list {
+    margin: 8px 0;
+    line-height: 30px;
+}
+
+.guarantees__explanations-list {
+    padding-left: 19px;
+    list-style-type: disc;
+}
+
+.guarantees__documents-list {
+    list-style-type: disc;
+}
+
