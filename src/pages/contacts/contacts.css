@@ -1,0 +1,47 @@
+.contacts {
+    margin: 16px 0 0 50px;
+    color: #3E4B5B;
+}
+
+.contacts__header {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.contacts__link,
+.contacts__address {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.contacts__link {
+    color: #2B88D8;
+    text-underline-offset: 3px;
+}
+
+.contacts__link:hover {
+    text-decoration: none;
+}
+
+.contacts__address {
+    font-style: normal;
+}
+
+.contacts__opening-hours-list {
+    margin: 6px 0 16px 0;
+    padding: 0 0 0 17px;
+}
+
+.contacts__opening-hours {
+    line-height: 28px;
+}
+
+.contacts__lable-map {
+    font-size: 18px;
+}

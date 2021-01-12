@@ -3,6 +3,7 @@ import { Header } from '../components/header';
 import { Divider } from '../components/divider';
 import { AboutPage } from '../pages/about';
 import { Footer } from '../components/footer';
+import { Contacts } from '../pages/contacts';
 
 function Application() {
     return (
@@ -10,7 +11,7 @@ function Application() {
             <Navigation />
             <Header />
             <Divider />
-            <AboutPage />
+            <Contacts />
             <Footer />
         </div>
     )
