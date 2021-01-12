@@ -6,6 +6,7 @@ import { Footer } from '../components/footer';
 import { Contacts } from '../pages/contacts';
 import { Guarantees } from '../pages/guarantees-and-return';
 import { Details } from '../pages/company-details';
+import { Cooperation } from '../pages/cooperation';
 
 function Application() {
     return (
@@ -13,7 +14,7 @@ function Application() {
             <Navigation />
             <Header />
             <Divider />
-            <Details />
+            <Cooperation />
             <Footer />
         </div>
     )

@@ -1,0 +1,40 @@
+.cooperation {
+    color: #3E4B5B;
+    margin: 0 40px 0 40px;
+    padding-top: 16px;
+}
+
+.cooperation__offer {
+    line-height: 28px;
+    margin: 6px 0 6px 0;
+}
+
+.cooperation__header {
+    margin: 20px 0 16px 0;
+    font-size: 30px;
+}
+
+.cooperation__container {
+    display: flex;
+    align-items: center;
+}
+
+.cooperation__advantages {
+    margin: 0 28px 0 28px;
+    width: 244px;
+}
+
+.cooperation__contact {
+    color: #2B88D8;
+    text-underline-offset: 3px;
+}
+
+.cooperation__contact:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 1064px) {
+    .cooperation__advantages {
+        font-size: 14px;
+    }
+}
