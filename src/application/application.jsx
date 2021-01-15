@@ -8,6 +8,7 @@ import { Guarantees } from '../pages/guarantees-and-return';
 import { Details } from '../pages/company-details';
 import { Cooperation } from '../pages/cooperation';
 import { Delivery } from '../pages/delivery-and-payment';
+import { HomePage } from '../pages/home-page';
 
 function Application() {
     return (
@@ -15,7 +16,7 @@ function Application() {
             <Navigation />
             <Header />
             <Divider />
-            <Delivery />
+            <HomePage />
             <Footer />
         </div>
     )
