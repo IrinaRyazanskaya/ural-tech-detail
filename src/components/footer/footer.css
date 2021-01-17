@@ -119,3 +119,43 @@
     font-style: normal;
 }
 
+@media(max-width: 1100px) {
+    .footer__actions {
+        margin: 0 26px;
+    }
+
+    .footer__links {
+        margin-right: 34px;
+    }
+}
+
+@media(max-width: 1023px) {
+    .footer__actions {
+        margin: 0 16px;
+    }
+
+    .footer__link,
+    .footer__phone-number,
+    .footer__email-address,
+    .footer__address,
+    .footer__map-link {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer__contacts {
+        margin-right: 14px;
+        width: 230px;
+    }
+
+    .footer__action-link,
+    .footer__action-button {
+        width: 180px;
+        height: 34px;
+        font-size: 11px;
+    }
+
+    .footer__links {
+        margin-right: 18px;
+    }
+}

@@ -1,6 +1,6 @@
 .details {
     color: #3E4B5B;
-    margin: 0 40px 0 40px;
+    margin: 0 40px;
     padding-top: 16px;
 }
 
@@ -24,5 +24,23 @@
 @media (max-width: 1084px) {
     .details__container {
         font-size: 14px;
+    }
+
+    .details__name {
+        width: 230px;
+    }
+
+    .details__description {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 939px) {
+    .details__container {
+        font-size: 12px;
+    }
+
+    .details__name {
+        width: 140px;
     }
 }

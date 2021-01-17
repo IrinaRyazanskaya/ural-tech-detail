@@ -35,7 +35,7 @@
 
 .contacts__opening-hours-list {
     margin: 6px 0 16px 0;
-    padding: 0 0 0 17px;
+    padding-left: 17px;
 }
 
 .contacts__opening-hours {
