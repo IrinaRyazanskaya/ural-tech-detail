@@ -11,7 +11,7 @@ import iconRequestSrc from './request-icon.svg';
 import iconTrophySrc from './trophy-icon.svg';
 import iconTruckSrc from './truck-icon.svg';
 
-function HomePage() {
+function Home() {
     return (
         <article className="home">
             <section className="home__section">
@@ -187,4 +187,4 @@ function HomePage() {
     )
 }
 
-export { HomePage };
+export { Home as HomePage };
