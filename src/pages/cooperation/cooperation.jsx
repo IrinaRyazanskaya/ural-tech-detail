@@ -55,7 +55,7 @@ function Cooperation() {
                 <a className="cooperation__contact" href="tel:+79193151000">
                     +7 (919) 315-10-00 
                 </a>
-                &nbsp;или направьте ваше предложение на электронный адрес&nbsp;
+                &nbsp;или направьте Ваше предложение на электронный адрес&nbsp;
                 <a className="cooperation__contact" href="mailto:89193151000@mail.ru">
                     89193151000@mail.ru 
                 </a>

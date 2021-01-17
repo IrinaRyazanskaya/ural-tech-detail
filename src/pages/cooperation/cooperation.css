@@ -1,12 +1,12 @@
 .cooperation {
     color: #3E4B5B;
-    margin: 0 40px 0 40px;
+    margin: 0 40px;
     padding-top: 16px;
 }
 
 .cooperation__offer {
     line-height: 28px;
-    margin: 6px 0 6px 0;
+    margin: 6px 0;
 }
 
 .cooperation__header {
@@ -20,7 +20,7 @@
 }
 
 .cooperation__advantages {
-    margin: 0 28px 0 28px;
+    margin: 0 28px;
     width: 244px;
 }
 
@@ -35,6 +35,21 @@
 
 @media (max-width: 1064px) {
     .cooperation__advantages {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1003px) {
+    .cooperation__icon {
+        width: 80px;
+    }
+
+    .cooperation__advantages {
+        margin: 0 6px 0 12px;
+        font-size: 12px;
+    }
+
+    .cooperation__offer {
         font-size: 14px;
     }
 }

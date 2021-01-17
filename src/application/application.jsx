@@ -16,7 +16,7 @@ function Application() {
             <Navigation />
             <Header />
             <Divider />
-            <HomePage />
+            <Delivery />
             <Footer />
         </div>
     )
