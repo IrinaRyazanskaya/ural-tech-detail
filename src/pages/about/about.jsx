@@ -73,4 +73,4 @@ function About() {
     )
 }
 
-export { About as AboutPage };
+export { About };

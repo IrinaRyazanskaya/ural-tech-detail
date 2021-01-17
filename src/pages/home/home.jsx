@@ -187,4 +187,4 @@ function Home() {
     )
 }
 
-export { Home as HomePage };
+export { Home };
