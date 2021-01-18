@@ -70,11 +70,13 @@ function Footer() {
                     />
                     <div className="footer__email-addresses">
                         <a className="footer__email-address" href="mailto:gruz_74@mail.ru">
-                            gruz_74@mail.ru отдел продаж	
+                            gruz_74@mail.ru 	
                         </a>
+                        <span className="footer__email-text"> отдел продаж </span>
                         <a className="footer__email-address" href="mailto:89193151000@mail.ru">
-                            89193151000@mail.ru отдел закупок
+                            89193151000@mail.ru
                         </a>
+                        <span className="footer__email-text"> отдел закупок</span>
                     </div>
                 </div>
                 <div className="footer__location">

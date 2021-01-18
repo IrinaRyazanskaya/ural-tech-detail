@@ -82,7 +82,8 @@
 .footer__phone-number,
 .footer__email-address,
 .footer__address,
-.footer__map-link {
+.footer__map-link,
+.footer__email-text {
     font-size: 16px;
     color: #fff;
     line-height: 24px;
@@ -97,7 +98,7 @@
 }
 
 .footer__phone-number,
-.footer__email-address,
+.footer__email-addreses,
 .footer__address {
     display: flex;
     flex-direction: column;
@@ -138,7 +139,8 @@
     .footer__phone-number,
     .footer__email-address,
     .footer__address,
-    .footer__map-link {
+    .footer__map-link,
+    .footer__email-text {
         font-size: 12px;
         line-height: 20px;
     }
@@ -157,5 +159,66 @@
 
     .footer__links {
         margin-right: 18px;
+    }
+}
+
+@media(max-width: 450px) {
+    .footer {
+        flex-direction: column;
+        margin-top: 50px;
+        height: 586px;
+        align-items: flex-start;
+    }
+
+    .footer__actions {
+        margin: 24px 0 16px 24px;
+    }
+
+    .footer__action-button {
+        margin-top: 16px;
+    }
+
+    .footer__action-button,
+    .footer__action-link {
+        width: 212px;
+        font-size: 14px;
+    }
+
+    .footer__links {
+        height: 84px;
+        margin: 0 0 6px 24px;
+    }
+
+    .footer__link {
+        font-size: 16px;
+    }
+
+    .footer__link,
+    .footer__phone-number,
+    .footer__email-address,
+    .footer__address,
+    .footer__map-link,
+    .footer__email-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer__contacts {
+        margin-left: 24px;
+        width: 296px;
+    }
+
+    .footer__address-text {
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 340px) {
+    .footer__phone-number,
+    .footer__email-address,
+    .footer__address,
+    .footer__map-link,
+    .footer__email-text {
+        font-size: 14px;
     }
 }

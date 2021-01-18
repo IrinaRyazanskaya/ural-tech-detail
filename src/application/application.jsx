@@ -1,6 +1,7 @@
 import { useMediaQuery } from 'react-responsive';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Navigation } from '../components/navigation';
+import { MobileNavigation } from '../components/mobile-navigation';
 import { Header } from '../components/header';
 import { MobileHeader } from '../components/mobile-header';
 import { Divider } from '../components/divider';
@@ -18,7 +19,7 @@ function Application() {
 
     return (
         <BrowserRouter>
-            <Navigation />
+            {isMobile ? <MobileNavigation /> : <Navigation />}
             {isMobile ? <MobileHeader /> : <Header />}
             <Divider />
             <Switch>
