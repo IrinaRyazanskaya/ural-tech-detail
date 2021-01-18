@@ -1,7 +1,12 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import './navigation.css';
 
 function Navigation() {
+    const location = useLocation();
+    const customerPaths = ['/delivery', '/guarantees', '/details'];
+    const isCustomerPath = customerPaths.some((path) => path === location.pathname);
+    const customerTriggerClass = isCustomerPath ? 'navigation__trigger-content_active' : '';
+
     return (
         <nav className="navigation">
             <ul className="navigation__items">
@@ -26,9 +31,11 @@ function Navigation() {
                     </NavLink>
                 </li>
                 <li className="navigation__item">
-                    <details className="navigation__sub-menu-container">
+                    <details className={"navigation__sub-menu-container"}>
                         <summary className="navigation__trigger">
-                            <div className="navigation__trigger-content">Покупателю</div>
+                            <div className={"navigation__trigger-content " + customerTriggerClass}>
+                                Покупателю
+                            </div>
                         </summary>
                         <nav className="navigation__sub-menu">
                             <ul className="navigation__sub-menu-items">
