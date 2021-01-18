@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './footer.css';
 import iconPriceSrc from './price-icon.svg';
 import iconRequestSrc from './request-icon.svg';
@@ -36,14 +37,14 @@ function Footer() {
                 </button>
             </div>
             <div className="footer__links">
-                <a className="footer__link" href="">Информация о компании</a>
-                <a className="footer__link" href="">Доставка и оплата</a>
-                <a className="footer__link" href="">Гарантии и возврат</a>
+                <Link className="footer__link" to="/about">Информация о компании</Link>
+                <Link className="footer__link" to="/delivery">Доставка и оплата</Link>
+                <Link className="footer__link" to="/guarantees">Гарантии и возврат</Link>
             </div>
             <div className="footer__links">
-                <a className="footer__link" href="">Реквизиты компании</a>
-                <a className="footer__link" href="">Сотрудничество</a>
-                <a className="footer__link" href="">Контактная информация</a>
+                <Link className="footer__link" to="/details">Реквизиты компании</Link>
+                <Link className="footer__link" to="/cooperation">Сотрудничество</Link>
+                <Link className="footer__link" to="/contacts">Контактная информация</Link>
             </div>
             <div className="footer__contacts">
                 <div className="footer__phones">
@@ -87,7 +88,7 @@ function Footer() {
                             Челябинская область, город Миасс,<br />Тургоякское шоссе,
                             дом № 3/16,<br />помещение 1
                         </address>
-                        <a className="footer__map-link" href="">Карта проезда</a>
+                        <Link className="footer__map-link" to="/contacts">Карта проезда</Link>
                     </div>
                 </div>
             </div>
