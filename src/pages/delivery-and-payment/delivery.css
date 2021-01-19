@@ -10,13 +10,18 @@
 
 .delivery__container,
 .delivery__cards,
-.delivery__card {
+.delivery__card,
+.delivery__fact-card {
     display: flex;
     align-items: center;
 }
 
 .delivery__container {
-    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.delivery__fact-card {
+    margin: 0 40px 18px 0;
 }
 
 .delivery__advantages {
@@ -33,7 +38,7 @@
 }
 
 .delivery__subtitle {
-    margin: 34px 0 14px 0;
+    margin: 14px 0;
     font-size: 20px;
 }
 
@@ -124,16 +129,6 @@
         width: 54px;
     }
 
-    .delivery__advantages {
-        margin-right: 20px;
-        width: 153px;
-        font-size: 12px;
-    }
-
-    .delivery__advantages-long {
-        width: 170px;
-    }
-
     .delivery__card {
         height: 86px;
     }
@@ -149,5 +144,66 @@
 
     .delivery__arrow {
         width: 24px;
+    }
+}
+
+@media (max-width: 450px) {
+    .delivery {
+        margin: 0 16px;
+        padding-top: 0;
+        font-size: 14px;
+    }
+
+    .delivery__header {
+        margin: 16px 0;
+        font-size: 22px;
+    }
+
+    .delivery__advantages-long {
+        width: 240px;
+    }
+
+    .delivery__container {
+        flex-wrap: wrap;
+    }
+
+    .delivery__icon {
+        width: 44px;
+    }
+
+    .delivery__subtitle {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .delivery__cards,
+    .delivery__last-header {
+        display: none;
+    }
+
+    .delivery__companies-list {
+        padding-left: 4px;
+        line-height: 28px;
+    }
+
+    .delivery__text,
+    .delivery__payment-list {
+        margin: 10px 0;
+        line-height: 22px;
+    }
+
+    .delivery__button-link {
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 384px) {
+    .delivery__companies-list {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .delivery__company {
+        margin-bottom: 8px;
     }
 }
