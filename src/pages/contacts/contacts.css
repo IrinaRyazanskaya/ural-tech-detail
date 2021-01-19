@@ -45,3 +45,23 @@
 .contacts__label-map {
     font-size: 18px;
 }
+
+@media (max-width: 450px) {
+    .contacts {
+        margin: 0 16px;
+        font-size: 14px;
+    }
+
+    .contacts__container {
+        margin-bottom: 18px;
+    }
+
+    .contacts__opening-hours {
+        line-height: 24px;
+    }
+
+    .contacts__header {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+}
