@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Divider } from '../../components/divider';
 import './home.css';
 import iconCallSrc from './call-icon.svg';
@@ -47,9 +48,9 @@ function Home() {
                     <p className="home__text">
                         У нас Вы можете приобрести запчасти к автомобилям УРАЛ собственного
                         производства, а также запчасти для&nbsp;
-                        <a className="home__link" href="">
+                        <Link className="home__link" to="/about">
                             других
-                        </a>
+                        </Link>
                         &nbsp;грузовых автомобилей от
                         проверенных поставщиков. Все запчасти собственного производства проходят
                         полный технологический цикл, работоспособность проверяется на стендах.

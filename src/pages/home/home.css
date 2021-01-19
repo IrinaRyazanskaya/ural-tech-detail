@@ -192,3 +192,100 @@
         margin-right: 24px;
     }
 }
+
+@media (max-width: 450px) {
+    .home__section ~ .home__section {
+        flex-direction: column;
+        margin: 0 12px; 
+    }
+
+    .home__main-image {
+        margin-bottom: 0;
+        height: 230px;
+    }
+
+    .home__main-card {
+        width: 328px;
+        height: 173px;
+        margin-left: 22px;
+    }
+
+    .home__company-name {
+        margin: 0px 0 4px 12px;
+        font-size: 22px;
+    }
+    
+    .home__facts-list {
+        margin: 0 auto;
+        padding-left: 24px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .home__text-container {
+        margin-bottom: 0;
+        width: 360px;
+    }
+
+    .home__header {
+        margin: 12px 0;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .home__text {
+        font-size: 14px;
+        margin: 12px 0;
+        line-height: 22px;
+    }
+
+    .home__button-container {
+        margin: 16px auto 30px auto;
+    }
+
+    .home__action-link,
+    .home__action-button {
+        width: 220px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .home__action-button {
+        margin-top: 14px;
+    }
+
+    .home__advantages-container {
+        margin: 22px 0 26px 0px;
+    }
+
+    .home__offers-container {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .home__text-container {
+        width: 296px;
+    }
+
+    .home__offer-text {
+        width: 124px;
+    }
+}
+
+@media (max-width: 365px) {
+    .home__main-card {
+        width: 294px;
+        height: 172px;
+        margin-left: 14px;
+    }
+
+    .home__facts-list {
+        line-height: 18px;
+    }
+
+    .home__header {
+        line-height: 24px;
+    }
+}
