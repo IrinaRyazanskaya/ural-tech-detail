@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './delivery.css';
 import iconMapSrc from './map-icon.svg';
 import iconTruckSrc from './truck-icon.svg';
@@ -206,12 +207,12 @@ function Delivery() {
                 Для постоянных и надежных клиентов специальные условия рассрочки или отсрочки
                 платежа, а также скидки - все условия индивидуальны и обсуждаются с менеджером.
             </p>
-            <a 
+            <Link 
                 className="delivery__button-link"
-                href=""
+                to="/details"
             >
                 РЕКВИЗИТЫ
-            </a>
+            </Link>
             <h2 className="delivery__header delivery__last-header">Как происходит заказ?</h2>
             <div className="delivery__cards">
                 <div className="delivery__card">

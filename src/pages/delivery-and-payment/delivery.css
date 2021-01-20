@@ -71,7 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 28px;
+    margin-top: 20px;
     width: 160px;
     height: 36px;
     border: 1px solid #004578;
@@ -150,12 +150,12 @@
 @media (max-width: 450px) {
     .delivery {
         margin: 0 16px;
-        padding-top: 0;
+        padding-top: 16px;
         font-size: 14px;
     }
 
     .delivery__header {
-        margin: 16px 0;
+        margin: 0;
         font-size: 22px;
     }
 
@@ -165,6 +165,7 @@
 
     .delivery__container {
         flex-wrap: wrap;
+        margin-top: 10px;
     }
 
     .delivery__icon {
