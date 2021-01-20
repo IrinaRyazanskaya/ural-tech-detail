@@ -7,7 +7,7 @@
 }
 
 .header__logo {
-    padding: 20px;
+    padding: 20px 24px;
     flex-grow: 1;
 }
 
@@ -16,12 +16,12 @@
 }
 
 .header__phones {
-    margin-right: 44px;
+    margin-right: 50px;
     width: 164px;
 }
 
 .header__emails {
-    margin-right: 44px;
+    margin-right: 50px;
     width: 320px;
 }
 
@@ -99,10 +99,6 @@
 }
 
 @media (max-width: 956px) {
-    .header__logo-image {
-        height: 60px;
-    }
-
     .header__logo {
         padding: 20px 10px;
     }
@@ -129,5 +125,11 @@
 
     .header__actions {
         margin-right: 20px;
+    }
+}
+
+@media (max-width: 828px) {
+    .header__logo-image {
+        height: 60px;
     }
 }
