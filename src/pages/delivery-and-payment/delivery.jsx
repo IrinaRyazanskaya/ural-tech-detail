@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './delivery.css';
 import iconMapSrc from './map-icon.svg';
 import iconTruckSrc from './truck-icon.svg';
@@ -16,53 +17,61 @@ function Delivery() {
         <article className="delivery">
             <h2 className="delivery__header">Доставка запчастей</h2>
             <div className="delivery__container">
-                <img 
-                    className="delivery__icon"
-                    src={iconMapSrc}
-                    alt="Иконка с картой"
-                />
-                <p className="delivery__advantages">
-                    Отправка заказов в любые регионы России и Ближнего Зарубежья любым удобным для
-                    Вас способом. 
-                </p>
-                <img 
-                    className="delivery__icon"
-                    src={iconTruckSrc}
-                    alt="Иконка с грузовиком"
-                />
-                <p className="delivery__advantages">
-                    Доставка до транспортных компаний оптовым покупателям осуществляется нашим
-                    транспортом бесплатно.
-                </p>
-                <img 
-                    className="delivery__icon"
-                    src={iconRubleSrc}
-                    alt="Иконка со знаком рубля"
-                />
-                <p className="delivery__advantages">
-                    Транспортный сбор в размере 300 рублей распостраняется только на заказы с
-                    суммой покупки менее 1 500 рублей.
-                </p>
-            </div>
-            <div className="delivery__container">
-                <img 
-                    className="delivery__icon"
-                    src={iconClockSrc}
-                    alt="Иконка с часами"
-                />
-                <p className="delivery__advantages">
-                    Отгрузка заказа осуществляется на следующий день от подачи заявки, при условии
-                    наличия товара на складе.
-                </p>
-                <img 
-                    className="delivery__icon"
-                    src={iconManagerSrc}
-                    alt="Иконка с менеджером"
-                />
-                <p className="delivery__advantages delivery__advantages-long">
-                    Срок комплектации и отгрузки комплексных заказов дополнительно обсуждается
-                    с менеджером, закрепленным за Вашей организацией.
-                </p>
+                <div className="delivery__fact-card">
+                    <img 
+                        className="delivery__icon"
+                        src={iconMapSrc}
+                        alt="Иконка с картой"
+                    />
+                    <p className="delivery__advantages">
+                        Отправка заказов в любые регионы России и Ближнего Зарубежья любым удобным для
+                        Вас способом. 
+                    </p>
+                </div>
+                <div className="delivery__fact-card">
+                    <img 
+                        className="delivery__icon"
+                        src={iconTruckSrc}
+                        alt="Иконка с грузовиком"
+                    />
+                    <p className="delivery__advantages">
+                        Доставка до транспортных компаний оптовым покупателям осуществляется нашим
+                        транспортом бесплатно.
+                    </p>
+                </div>
+                <div className="delivery__fact-card">
+                    <img 
+                        className="delivery__icon"
+                        src={iconRubleSrc}
+                        alt="Иконка со знаком рубля"
+                    />
+                    <p className="delivery__advantages">
+                        Транспортный сбор в размере 300 рублей распостраняется только на заказы с
+                        суммой покупки менее 1 500 рублей.
+                    </p>
+                </div>
+                <div className="delivery__fact-card">
+                    <img 
+                        className="delivery__icon"
+                        src={iconClockSrc}
+                        alt="Иконка с часами"
+                    />
+                    <p className="delivery__advantages">
+                        Отгрузка заказа осуществляется на следующий день от подачи заявки, при условии
+                        наличия товара на складе.
+                    </p>
+                </div>
+                <div className="delivery__fact-card">
+                    <img 
+                        className="delivery__icon"
+                        src={iconManagerSrc}
+                        alt="Иконка с менеджером"
+                    />
+                    <p className="delivery__advantages delivery__advantages-long">
+                        Срок комплектации и отгрузки комплексных заказов дополнительно обсуждается
+                        с менеджером, закрепленным за Вашей организацией.
+                    </p>
+                </div>    
             </div>
             <h3 className="delivery__subtitle">Варианты доставки через транспортные компании:</h3>
             <ul className="delivery__companies-list">
@@ -72,7 +81,7 @@ function Delivery() {
                             className="delivery__company-link"
                             href="https://pecom.ru/services-are/shipping-request/"
                         >
-                            расчет стоимости доставки
+                            расчет&nbsp;стоимости&nbsp;доставки
                         </a>
                     )
                 </li>
@@ -82,7 +91,7 @@ function Delivery() {
                             className="delivery__company-link"
                             href="https://xn----stbeziy.xn--p1ai/calc-pro"
                         >
-                            расчет стоимости доставки
+                            расчет&nbsp;стоимости&nbsp;доставки
                         </a>
                     )
                 </li>
@@ -92,7 +101,7 @@ function Delivery() {
                             className="delivery__company-link"
                             href="https://miass.gtdel.com/"
                         >
-                            расчет стоимости доставки
+                            расчет&nbsp;стоимости&nbsp;доставки
                         </a>
                     )
                 </li>
@@ -102,7 +111,7 @@ function Delivery() {
                             className="delivery__company-link"
                             href="https://rateksib.com/branches/69/index.html"
                         >
-                            расчет стоимости доставки
+                            расчет&nbsp;стоимости&nbsp;доставки
                         </a>
                     )
                 </li>
@@ -112,7 +121,7 @@ function Delivery() {
                             className="delivery__company-link"
                             href="https://nrg-tk.ru/client/calculator/"
                         >
-                            расчет стоимости доставки
+                            расчет&nbsp;стоимости&nbsp;доставки
                         </a>
                     )
                 </li>
@@ -122,7 +131,7 @@ function Delivery() {
                             className="delivery__company-link"
                             href="https://gruzline.net/rasschitat-stoimost-dostavki"
                         >
-                            расчет стоимости доставки
+                            расчет&nbsp;стоимости&nbsp;доставки
                         </a>
                     )
                 </li>
@@ -132,7 +141,7 @@ function Delivery() {
                             className="delivery__company-link"
                             href="http://expressauto.ru/autokalkulyator"
                         >
-                            расчет стоимости доставки
+                            расчет&nbsp;стоимости&nbsp;доставки
                         </a>
                     )
                 </li>
@@ -142,7 +151,7 @@ function Delivery() {
                             className="delivery__company-link"
                             href="https://www.baikalsr.ru/"
                         >
-                            расчет стоимости доставки
+                            расчет&nbsp;стоимости&nbsp;доставки
                         </a>
                     )
                 </li>
@@ -152,7 +161,7 @@ function Delivery() {
                             className="delivery__company-link"
                             href="https://www.dellin.ru/"
                         >
-                            расчет стоимости доставки
+                            расчет&nbsp;стоимости&nbsp;доставки
                         </a>
                     )
                 </li>
@@ -162,7 +171,7 @@ function Delivery() {
                             className="delivery__company-link"
                             href="https://www.jde.ru/online/calculator.html"
                         >
-                            расчет стоимости доставки
+                            расчет&nbsp;стоимости&nbsp;доставки
                         </a>
                     )
                 </li>
@@ -198,13 +207,13 @@ function Delivery() {
                 Для постоянных и надежных клиентов специальные условия рассрочки или отсрочки
                 платежа, а также скидки - все условия индивидуальны и обсуждаются с менеджером.
             </p>
-            <a 
+            <Link 
                 className="delivery__button-link"
-                href=""
+                to="/details"
             >
                 РЕКВИЗИТЫ
-            </a>
-            <h2 className="delivery__header">Как происходит заказ?</h2>
+            </Link>
+            <h2 className="delivery__header delivery__last-header">Как происходит заказ?</h2>
             <div className="delivery__cards">
                 <div className="delivery__card">
                     <img 

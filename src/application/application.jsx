@@ -1,24 +1,52 @@
+import { useMediaQuery } from 'react-responsive';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Navigation } from '../components/navigation';
+import { MobileNavigation } from '../components/mobile-navigation';
 import { Header } from '../components/header';
+import { MobileHeader } from '../components/mobile-header';
 import { Divider } from '../components/divider';
-import { AboutPage } from '../pages/about';
+import { About } from '../pages/about';
 import { Footer } from '../components/footer';
 import { Contacts } from '../pages/contacts';
 import { Guarantees } from '../pages/guarantees-and-return';
 import { Details } from '../pages/company-details';
 import { Cooperation } from '../pages/cooperation';
 import { Delivery } from '../pages/delivery-and-payment';
-import { HomePage } from '../pages/home-page';
+import { Home } from '../pages/home';
 
 function Application() {
+    const isMobile = useMediaQuery({ query: '(max-width: 450px)' });
+
     return (
-        <div>
-            <Navigation />
-            <Header />
+        <BrowserRouter>
+            {isMobile ? <MobileNavigation /> : <Navigation />}
+            {isMobile ? <MobileHeader /> : <Header />}
             <Divider />
-            <Delivery />
+            <Switch>
+                <Route path="/" exact>
+                    <Home />
+                </Route>
+                <Route path="/about" exact>
+                    <About />
+                </Route>
+                <Route path="/delivery" exact>
+                    <Delivery />
+                </Route>
+                <Route path="/guarantees" exact>
+                    <Guarantees />
+                </Route>
+                <Route path="/details" exact>
+                    <Details />
+                </Route>
+                <Route path="/cooperation" exact>
+                    <Cooperation />
+                </Route>
+                <Route path="/contacts" exact>
+                    <Contacts />
+                </Route>
+            </Switch>
             <Footer />
-        </div>
+        </BrowserRouter>
     )
 }
 

@@ -11,33 +11,39 @@ function Cooperation() {
                 Приглашаем к сотрудничеству поставщиков: производителей запасных частей и
                 комплектующих для грузовых автомобилей, посредников.
             </p>
-            <div className="cooperation__container">
-                <img 
-                    className="cooperation__icon" 
-                    src={iconDetailSrc}
-                    alt="Иконка запчасти"
-                />
-                <p className="cooperation__advantages">
-                    Более 300 наименований запчастей в наличии на складе
-                </p>
-                <img 
-                    className="cooperation__icon" 
-                    src={iconTruckSrc}
-                    alt="Иконка грузовика"
-                />
-                <p className="cooperation__advantages">
-                    Отгрузка заказа осуществляется на следующий день от подачи заявки,
-                    при условии наличия товара на складе.
-                </p>
-                <img 
-                    className="cooperation__icon"
-                    src={iconPercentSrc}
-                    alt="Иконка процента"
-                />
-                <p className="cooperation__advantages">
-                    Для постоянных клиентов специальные условия рассрочки или отсрочки платежа,
-                    а также скидки
-                </p>
+            <div className="cooperation__cards">
+                <div className="cooperation__card">
+                    <img 
+                        className="cooperation__icon" 
+                        src={iconDetailSrc}
+                        alt="Иконка запчасти"
+                    />
+                    <p className="cooperation__advantages">
+                        Более 300 наименований запчастей в наличии на складе
+                    </p>
+                </div>
+                <div className="cooperation__card">
+                    <img 
+                        className="cooperation__icon" 
+                        src={iconTruckSrc}
+                        alt="Иконка грузовика"
+                    />
+                    <p className="cooperation__advantages">
+                        Отгрузка заказа осуществляется на следующий день от подачи заявки,
+                        при условии наличия товара на складе.
+                    </p>
+                </div>
+                <div className="cooperation__card">
+                    <img 
+                        className="cooperation__icon"
+                        src={iconPercentSrc}
+                        alt="Иконка процента"
+                    />
+                    <p className="cooperation__advantages">
+                        Для постоянных клиентов специальные условия рассрочки или отсрочки платежа,
+                        а также скидки
+                    </p>
+                </div>
             </div>
             <p className="cooperation__offer">
                 ООО ТД «УралТехДеталь» приобретёт запчасти к а/м "Урал" как новые, так и после

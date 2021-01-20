@@ -57,3 +57,37 @@
     list-style-type: disc;
 }
 
+@media (max-width: 450px) {
+    .guarantees {
+        margin: 0 16px;
+    }
+
+    .guarantees__header {
+        margin: 8px 0 6px 0;
+        font-size: 22px;
+    }
+
+    .guarantees__facts {
+        margin: 6px 0;
+    }
+
+    .guarantees__facts,
+    .guarantees__contact-link,
+    .guarantees__download-link,
+    .guarantees__rules-list {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .guarantees__contact-link:first-of-type {
+        margin-top: 2px;
+    }
+
+    .guarantees__rules-list {
+        padding-left: 30px;
+    }
+
+    .guarantees__download-link {
+        margin-left: 14px;
+    }
+}

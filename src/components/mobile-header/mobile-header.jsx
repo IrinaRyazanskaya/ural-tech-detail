@@ -1,0 +1,94 @@
+import './mobile-header.css';
+import iconPhoneSrc from './phone-icon.svg';
+import iconSmartphoneSrc from './smartphone-icon.svg';
+import iconEmailSrc from './email-icon.svg';
+import iconPriceSrc from './price-icon.svg';
+import iconRequestSrc from './request-icon.svg';
+import iconCallSrc from './call-icon.svg';
+
+function MobileHeader() {
+    return (
+        <header className="mobile-header">
+            <div className="mobile-header__contacts">
+                <div className="mobile-header__phones">
+                    <div className="mobile-header__phone">
+                        <img
+                            className="mobile-header__phone-icon"
+                            src={iconPhoneSrc}
+                            alt="Иконка телефона"
+                        />
+                        <a className="mobile-header__phone-number" href="tel:+73513264004">
+                            +7 (3513) 264-004
+                        </a>
+                    </div>
+                    <div className="mobile-header__phone">
+                        <img 
+                            className="mobile-header__phone-icon"
+                            src={iconSmartphoneSrc}
+                            alt="Иконка мобильного телефона"
+                        />
+                        <a className="mobile-header__phone-number" href="tel:+79193151000">
+                            +7 (919) 315-10-00
+                        </a>
+                    </div>
+                </div>
+                <div className="mobile-header__emails">
+                    <div className="mobile-header__email">
+                        <img
+                            className="mobile-header__email-icon"
+                            src={iconEmailSrc}
+                            alt="Иконка email"
+                        />
+                        <a className="mobile-header__email-address" href="mailto:gruz_74@mail.ru">
+                            gruz_74@mail.ru (отдел продаж)	
+                        </a>
+                    </div>
+                    <div className="mobile-header__email">
+                        <img 
+                            className="mobile-header__email-icon"
+                            src={iconEmailSrc}
+                            alt="Иконка email"
+                        />
+                        <a className="mobile-header__email-address" href="mailto:89193151000@mail.ru">
+                            89193151000@mail.ru (отдел закупок)
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="mobile-header__actions">
+                <div className="mobile-header__action">
+                    <img 
+                        className="mobile-header__action-icon"
+                        src={iconPriceSrc}
+                        alt="Иконка прайс-листа"
+                    />
+                    <a className="mobile-header__action-link" href="">
+                        Смотреть прайс-лист
+                    </a>
+                </div>
+                <div className="mobile-header__action">
+                    <img 
+                        className="mobile-header__action-icon"
+                        src={iconRequestSrc}
+                        alt="Иконка отправки заявки"
+                    />
+                    <button className="mobile-header__action-button">
+                        Отправить заявку
+                    </button>
+                </div>
+                <div className="mobile-header__action">
+                    <img 
+                        className="mobile-header__action-icon"
+                        src={iconCallSrc}
+                        alt="Иконка заказа звонка"
+                    />
+                    <button className="mobile-header__action-button">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </header>
+    )
+}
+
+export { MobileHeader };

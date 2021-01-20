@@ -3,7 +3,7 @@ import './contacts.css';
 function Contacts() {
     return (
         <article className="contacts">
-            <h2 className="contacts__header">Контакты компании ООО ТД «УралТехДеталь»</h2>
+            <h2 className="contacts__header">Контакты компании ООО&nbsp;ТД&nbsp;«УралТехДеталь»</h2>
             <div className="contacts__container">
                 <strong className="contacts__label">Телефон:</strong>
                 <a className="contacts__link" href="tel:+73513264004">

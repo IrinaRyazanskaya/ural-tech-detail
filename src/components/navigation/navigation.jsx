@@ -1,63 +1,97 @@
+import { NavLink, useLocation } from 'react-router-dom';
 import './navigation.css';
 
 function Navigation() {
+    const location = useLocation();
+    const customerPaths = ['/delivery', '/guarantees', '/details'];
+    const isCustomerPath = customerPaths.some((path) => path === location.pathname);
+    const customerTriggerClass = isCustomerPath ? 'navigation__trigger-content_active' : '';
+
     return (
         <nav className="navigation">
             <ul className="navigation__items">
                 <li className="navigation__item">
-                    <a className="navigation__item-link" href="">
+                    <NavLink 
+                        className="navigation__item-link" 
+                        activeClassName="navigation__item-link_active"
+                        to="/"
+                        exact
+                    >
                         Главная
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="navigation__item">
-                    <a className="navigation__item-link" href="">
+                    <NavLink 
+                        className="navigation__item-link"
+                        activeClassName="navigation__item-link_active" 
+                        to="/about"
+                        exact
+                    >
                         О компании
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="navigation__item">
-                    <details className="navigation__sub-menu-container" href="">
+                    <details className={"navigation__sub-menu-container"}>
                         <summary className="navigation__trigger">
-                            <div className="navigation__trigger-content">Покупателю</div>
+                            <div className={"navigation__trigger-content " + customerTriggerClass}>
+                                Покупателю
+                            </div>
                         </summary>
                         <nav className="navigation__sub-menu">
                             <ul className="navigation__sub-menu-items">
                                 <li className="navigation__sub-menu-item">
-                                    <a 
+                                    <NavLink 
                                         className="navigation__sub-menu-link"
-                                        href=""
+                                        activeClassName="navigation__sub-menu-link_active" 
+                                        to="/delivery"
+                                        exact
                                     >
                                             Доставка и оплата
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="navigation__sub-menu-item">
-                                    <a 
+                                    <NavLink 
                                         className="navigation__sub-menu-link"
-                                        href=""
+                                        activeClassName="navigation__sub-menu-link_active"  
+                                        to="/guarantees"
+                                        exact
                                     >
                                             Гарантии и возврат
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="navigation__sub-menu-item">
-                                    <a 
+                                    <NavLink 
                                         className="navigation__sub-menu-link"
-                                        href=""
+                                        activeClassName="navigation__sub-menu-link_active" 
+                                        to="/details"
+                                        exact
                                     >
                                         Реквизиты
-                                    </a>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </nav>
                     </details>
                 </li>
                 <li className="navigation__item">
-                    <a className="navigation__item-link" href="">
+                    <NavLink 
+                        className="navigation__item-link"
+                        activeClassName="navigation__item-link_active" 
+                        to="/cooperation"
+                        exact
+                    >
                         Сотрудничество
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="navigation__item">
-                    <a className="navigation__item-link" href="">
+                    <NavLink 
+                        className="navigation__item-link"
+                        activeClassName="navigation__item-link_active" 
+                        to="/contacts"
+                        exact
+                    >
                         Контакты
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
         </nav>

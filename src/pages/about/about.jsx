@@ -1,6 +1,6 @@
 import './about.css';
 
-function AboutPage() {
+function About() {
     return (
         <article className="about">
             <h2 className="about__header">О компании</h2>
@@ -73,4 +73,4 @@ function AboutPage() {
     )
 }
 
-export { AboutPage };
+export { About };
