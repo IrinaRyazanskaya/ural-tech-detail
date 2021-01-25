@@ -45,13 +45,16 @@
     padding-left: 10px;
     width: 446px;
     height: 28px;
+    color: #3E4B5B;
     background-color: rgba(196, 196, 196, 0.1);
     border: 1px solid rgba(196, 196, 196, 0.7);
     border-radius: 2px;
 }
 
-.call-modal__field:active {
-    border: 1px solid rgba(0, 90, 158, 0.7);
+.call-modal__field:active,
+.call-modal__field:focus {
+    border-color:rgba(0, 90, 158, 0.7);
+    outline: none;
 }
 
 .call-modal__lable-required {
@@ -89,4 +92,63 @@
 
 .call-modal__send-button:hover {
     background-color: rgba(0, 69, 120, 0.7);
+}
+
+@media (max-width: 767px) {
+    .call-modal {
+        width: 290px;
+        height: 310px;
+        padding-top: 10px;
+    }
+
+    .call-modal__close-button {
+        margin-right: 10px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .call-modal__close-icon {
+        width: 12px;
+    }
+
+    .call-modal__header {
+        width: 180px;
+        font-size: 22px;
+        margin: 6px auto 20px auto;
+    }
+    
+    .call-modal__form {
+        width: 240px;
+    }
+
+    .call-modal__lable {
+        font-size: 14px;
+    }
+
+    .call-modal__field {
+        margin: 6px 0;
+        padding-left: 4px;
+        width: 232px;
+        height: 18px;
+    }
+
+    .call-modal__form-text {
+        margin: 12px 0 12px 0;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .call-modal__form-link {
+        text-underline-offset: 1px;
+    }
+
+    .call-modal__button-container {
+        width: 108px;
+    }
+
+    .call-modal__send-button {
+        width: 108px;
+        height: 36px;
+        font-size: 14px;
+    }
 }
