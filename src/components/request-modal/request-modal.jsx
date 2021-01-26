@@ -2,6 +2,16 @@ import './request-modal.css';
 import iconCrossSrc from './cross-icon.svg';
 
 function RequestModal() {
+    const handleFileChange = (event) => {
+        const fileName = document.querySelector('.request-modal__file-name');
+
+        if (event.target.files.length === 1) {
+            fileName.innerHTML = event.target.files[0].name;
+        } else {
+            fileName.innerHTML = 'Файл не выбран';
+        }
+    }
+
     return (
         <div className="request-modal">
             <button className="request-modal__close-button">
@@ -14,14 +24,16 @@ function RequestModal() {
             <h2 className="request-modal__header">Отправить заявку</h2>
             <form className="request-modal__form">
                 <p className="request-modal__lable">Файл заявки:</p>
-                <input 
+                <input
                     className="request-modal__field-file"
                     type="file"
                     id="file"
                     name="file"
+                    multiple={false}
+                    onChange={handleFileChange}
                 />
                 <label class="request-modal__file-wrapper" for="file">
-                    <div class="request-modal__file-fake">Файл не выбран</div>
+                    <div class="request-modal__file-name">Файл не выбран</div>
                     <div class="request-modal__file-button">Выбрать</div>
                 </label>
                 <label className="request-modal__lable" for="name">
