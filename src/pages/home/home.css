@@ -193,7 +193,7 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 767px) {
     .home__section ~ .home__section {
         flex-direction: column;
         margin: 0 12px; 

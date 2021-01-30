@@ -46,7 +46,16 @@
     font-size: 18px;
 }
 
-@media (max-width: 450px) {
+.contacts__map-container {
+    margin-top: 20px;
+}
+
+.contacts__map {
+    width: 700px;
+    height: 450px;
+}
+
+@media (max-width: 767px) {
     .contacts {
         margin: 0 16px;
         font-size: 14px;
@@ -63,5 +72,17 @@
     .contacts__header {
         font-size: 22px;
         margin-bottom: 16px;
+    }
+
+    .contacts__map {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 380px) {
+    .contacts__map {
+        width: 290px;
+        height: 230px;
     }
 }

@@ -20,7 +20,7 @@
 .mobile-header__actions {
     display: flex;
     justify-content: space-between;
-    margin: 12px 14px;
+    margin: 12px 38px;
 }
 
 .mobile-header__contacts {
@@ -32,7 +32,7 @@
 .mobile-header__email-address,
 .mobile-header__action-link,
 .mobile-header__action-button {
-    font-size: 11px;
+    font-size: 16px;
     font-weight: bold;
     color: #3C5B84;
     text-decoration: none;
@@ -40,8 +40,8 @@
 
 .mobile-header__phone-icon,
 .mobile-header__email-icon,
-.mobile-header__email-address,
 .mobile-header__action-icon {
+    height: 16px;
     margin-right: 6px;
 }
 
@@ -51,12 +51,85 @@
     padding: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 648px) {
+    .mobile-header__contacts,
+    .mobile-header__actions {
+        margin: 12px 16px;
+    }
+}
+
+@media (max-width: 568px) {
     .mobile-header__phone-number,
     .mobile-header__email-address,
     .mobile-header__action-link,
     .mobile-header__action-button {
-        font-size: 10px;
+        font-size: 14px;
+    }
+
+    .mobile-header__phone-icon,
+    .mobile-header__email-icon,
+    .mobile-header__action-icon {
+        height: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .mobile-header__phone-number,
+    .mobile-header__email-address,
+    .mobile-header__action-link,
+    .mobile-header__action-button {
+        font-size: 12px;
+    }
+
+    .mobile-header__phone-icon,
+    .mobile-header__email-icon,
+    .mobile-header__action-icon {
+        height: 12px;
+    }
+}
+
+@media (max-width: 460px) {
+    .mobile-header__contacts,
+    .mobile-header__actions {
+        margin: 12px 14px;
+    }
+
+    .mobile-header__contacts {
+        margin-bottom: 0;
+    }
+
+    .mobile-header__phone-number,
+    .mobile-header__email-address,
+    .mobile-header__action-link,
+    .mobile-header__action-button {
+        font-size: 11px;
+    }
+
+    .mobile-header__email-addressс{
+        margin-right: 6px;
+    }
+
+    .mobile-header__phone-icon,
+    .mobile-header__email-icon,
+    .mobile-header__action-icon {
+        height: 11px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mobile-header__contacts,
+    .mobile-header__actions {
+        margin: 12px 8px;
+    }
+
+    .mobile-header__contacts {
+        margin-bottom: 0;
+    }
+
+    .mobile-header__phone-icon,
+    .mobile-header__email-icon,
+    .mobile-header__action-icon {
+        margin-right: 2px;
     }
 }
 
@@ -66,19 +139,6 @@
     .mobile-header__action-link,
     .mobile-header__action-button {
         font-size: 9px;
-    }
-}
-
-@media (max-width: 350px) {
-    .mobile-header__phone-number,
-    .mobile-header__email-address,
-    .mobile-header__action-link,
-    .mobile-header__action-button {
-        font-size: 8px;
-    }
-
-    .mobile-header__contacts {
-        margin-bottom: 0;
     }
 }
 

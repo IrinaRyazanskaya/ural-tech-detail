@@ -1,4 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
+import { YMaps } from 'react-yandex-maps';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Navigation } from '../components/navigation';
 import { MobileNavigation } from '../components/mobile-navigation';
@@ -15,38 +16,40 @@ import { Delivery } from '../pages/delivery-and-payment';
 import { Home } from '../pages/home';
 
 function Application() {
-    const isMobile = useMediaQuery({ query: '(max-width: 450px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
     return (
-        <BrowserRouter>
-            {isMobile ? <MobileNavigation /> : <Navigation />}
-            {isMobile ? <MobileHeader /> : <Header />}
-            <Divider />
-            <Switch>
-                <Route path="/" exact>
-                    <Home />
-                </Route>
-                <Route path="/about" exact>
-                    <About />
-                </Route>
-                <Route path="/delivery" exact>
-                    <Delivery />
-                </Route>
-                <Route path="/guarantees" exact>
-                    <Guarantees />
-                </Route>
-                <Route path="/details" exact>
-                    <Details />
-                </Route>
-                <Route path="/cooperation" exact>
-                    <Cooperation />
-                </Route>
-                <Route path="/contacts" exact>
-                    <Contacts />
-                </Route>
-            </Switch>
-            <Footer />
-        </BrowserRouter>
+        <YMaps>
+            <BrowserRouter>
+                {isMobile ? <MobileNavigation /> : <Navigation />}
+                {isMobile ? <MobileHeader /> : <Header />}
+                <Divider />
+                <Switch>
+                    <Route path="/" exact>
+                        <Home />
+                    </Route>
+                    <Route path="/about" exact>
+                        <About />
+                    </Route>
+                    <Route path="/delivery" exact>
+                        <Delivery />
+                    </Route>
+                    <Route path="/guarantees" exact>
+                        <Guarantees />
+                    </Route>
+                    <Route path="/details" exact>
+                        <Details />
+                    </Route>
+                    <Route path="/cooperation" exact>
+                        <Cooperation />
+                    </Route>
+                    <Route path="/contacts" exact>
+                        <Contacts />
+                    </Route>
+                </Switch>
+                <Footer />
+            </BrowserRouter>
+        </YMaps>
     )
 }
 

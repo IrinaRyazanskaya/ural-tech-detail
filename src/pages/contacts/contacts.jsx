@@ -1,3 +1,7 @@
+import { Map } from 'react-yandex-maps';
+import { Placemark } from 'react-yandex-maps';
+import { GeolocationControl } from 'react-yandex-maps';
+import { ZoomControl } from 'react-yandex-maps';
 import './contacts.css';
 
 function Contacts() {
@@ -54,6 +58,16 @@ function Contacts() {
                 </ul>
             </div>
             <strong className="contacts__label-map">Схема проезда</strong>
+            <div className="contacts__map-container">
+                <Map
+                    className="contacts__map"
+                    defaultState={{ center: [55.104764, 60.132893], zoom: 15 }}
+                >
+                    <Placemark geometry={[55.104764, 60.132893]} />
+                    <GeolocationControl options={{ float: 'left' }} />
+                    <ZoomControl options={{ float: 'right' }} />
+                </Map>
+            </div>
         </article>
     )
 }
