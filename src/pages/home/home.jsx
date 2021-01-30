@@ -61,7 +61,7 @@ function Home() {
                     <p className="home__text">
                         Имеющийся станочный парк разнообразного металлообрабатывающего оборудования
                         с ЧПУ (токарного, фрезерного, электроэррозионного), позволяет выполнять
-                        любые нестандартные работы по всем видам металлообработки по вашим чертежам
+                        любые нестандартные работы по всем видам металлообработки по Вашим чертежам
                         и техническим заданиям.
                     </p>
                 </div>
@@ -137,7 +137,7 @@ function Home() {
             </section>
             <Divider />
             <section className="home__section home__section-column">
-                <h2 className="home__header">Мы рады предложить вам</h2>
+                <h2 className="home__header">Мы рады предложить Вам</h2>
                 <div className="home__offers-container">
                     <div className="home__offer">
                         <img 

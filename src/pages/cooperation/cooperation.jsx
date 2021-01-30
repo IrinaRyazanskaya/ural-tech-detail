@@ -30,7 +30,7 @@ function Cooperation() {
                     />
                     <p className="cooperation__advantages">
                         Отгрузка заказа осуществляется на следующий день от подачи заявки,
-                        при условии наличия товара на складе.
+                        при условии наличия товара на складе
                     </p>
                 </div>
                 <div className="cooperation__card">
