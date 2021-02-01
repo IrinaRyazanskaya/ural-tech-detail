@@ -25,6 +25,7 @@
     box-sizing: border-box;
     font-size: 14px;
     color: #004578;
+    outline: none;
 }
 
 .footer__action-link:hover,

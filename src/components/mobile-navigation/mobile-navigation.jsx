@@ -34,14 +34,14 @@ function MobileNavigation() {
             <div className="mobile-navigation__container">
                 <div className="mobile-navigation__burger-menu burger-menu">
                     <input
-                        class="burger-menu__check"
+                        className="burger-menu__check"
                         type="checkbox"
                         id="menu-toggle"
                         name="menu-toggle"
                         checked={isInputChecked}
                         onChange={handleToggle}
                     />
-                    <label class="burger-menu__button" for="menu-toggle">
+                    <label className="burger-menu__button" htmlFor="menu-toggle">
                         <div className={buttonClass}></div>
                         <div className={buttonClass}></div>
                         <div className={buttonClass}></div>

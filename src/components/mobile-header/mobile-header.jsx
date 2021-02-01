@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { RequestModal } from '../request-modal';
+import { CallModal } from '../call-modal';
 import './mobile-header.css';
 import iconPhoneSrc from './phone-icon.svg';
 import iconSmartphoneSrc from './smartphone-icon.svg';
@@ -7,6 +10,26 @@ import iconRequestSrc from './request-icon.svg';
 import iconCallSrc from './call-icon.svg';
 
 function MobileHeader() {
+    const [isRequestModalOpen, setRequestModalOpen] = useState(false);
+   
+    const handleRequestClick = () => {
+        setRequestModalOpen(true);
+    }
+
+    const closeRequestModal = () => {
+        setRequestModalOpen(false);
+    }
+
+    const [isCallModalOpen, setCallModalOpen] = useState(false);
+
+    const handleCallClick = () => {
+        setCallModalOpen(true);
+    }
+
+    const closeCallModal = () => {
+        setCallModalOpen(false);
+    }
+
     return (
         <header className="mobile-header">
             <div className="mobile-header__contacts">
@@ -72,9 +95,13 @@ function MobileHeader() {
                         src={iconRequestSrc}
                         alt="Иконка отправки заявки"
                     />
-                    <button className="mobile-header__action-button">
+                    <button 
+                        className="mobile-header__action-button"
+                        onClick={handleRequestClick}
+                    >
                         Отправить заявку
                     </button>
+                    {isRequestModalOpen && <RequestModal onClose={closeRequestModal} />}
                 </div>
                 <div className="mobile-header__action">
                     <img 
@@ -82,9 +109,13 @@ function MobileHeader() {
                         src={iconCallSrc}
                         alt="Иконка заказа звонка"
                     />
-                    <button className="mobile-header__action-button">
+                    <button 
+                        className="mobile-header__action-button"
+                        onClick={handleCallClick}
+                    >
                         Заказать звонок
                     </button>
+                    {isCallModalOpen && <CallModal onClose={closeCallModal} />}
                 </div>
             </div>
         </header>

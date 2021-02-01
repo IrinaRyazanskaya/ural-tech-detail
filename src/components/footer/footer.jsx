@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { RequestModal } from '../request-modal';
+import { CallModal } from '../call-modal';
 import { Link } from 'react-router-dom';
 import './footer.css';
 import iconPriceSrc from './price-icon.svg';
@@ -8,6 +11,26 @@ import iconEmailSrc from './email-icon.svg';
 import iconPlaceholderSrc from './placeholder-icon.svg';
 
 function Footer() {
+    const [isRequestModalOpen, setRequestModalOpen] = useState(false);
+   
+    const handleRequestClick = () => {
+        setRequestModalOpen(true);
+    }
+
+    const closeRequestModal = () => {
+        setRequestModalOpen(false);
+    }
+
+    const [isCallModalOpen, setCallModalOpen] = useState(false);
+
+    const handleCallClick = () => {
+        setCallModalOpen(true);
+    }
+
+    const closeCallModal = () => {
+        setCallModalOpen(false);
+    }
+
     return(
         <footer className="footer">
             <div className="footer__actions">
@@ -19,7 +42,10 @@ function Footer() {
                     />
                     <span className="footer__price-list">СМОТРЕТЬ ПРАЙС-ЛИСТ</span>
                 </a>
-                <button className="footer__action-button">
+                <button 
+                    className="footer__action-button"
+                    onClick={handleRequestClick}
+                >
                     <img 
                         className="footer__action-icon"
                         src={iconRequestSrc}
@@ -27,7 +53,11 @@ function Footer() {
                     />
                     ОТПРАВИТЬ ЗАЯВКУ
                 </button>
-                <button className="footer__action-button">
+                {isRequestModalOpen && <RequestModal onClose={closeRequestModal} />}
+                <button 
+                    className="footer__action-button"
+                    onClick={handleCallClick}
+                >
                     <img 
                         className="footer__action-icon"
                         src={iconCallSrc}
@@ -35,6 +65,7 @@ function Footer() {
                     />
                     ЗАКАЗАТЬ ЗВОНОК
                 </button>
+                {isCallModalOpen && <CallModal onClose={closeCallModal} />}
             </div>
             <div className="footer__links">
                 <Link className="footer__link" to="/about">Информация о компании</Link>
