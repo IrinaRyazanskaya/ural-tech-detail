@@ -33,3 +33,34 @@
 .privacy__sub-item {
     margin: 8px 0;
 }
+
+@media (max-width: 450px) {
+    .privacy {
+        margin: 0 16px;
+        font-size: 14px;
+    }
+
+    .privacy__header {
+        margin: 16px 0 0 0;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .privacy__list {
+        padding-left: 18px;
+        line-height: 24px;
+    }
+
+    .privacy__list-item {
+        margin-bottom: 6px;
+    }
+
+    .privacy__text,
+    .privacy__sub-item {
+        margin: 6px 0;
+    }
+
+    .privacy__sub-items-list {
+        padding-left: 0;
+    }
+}
