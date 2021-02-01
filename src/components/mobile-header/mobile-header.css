@@ -49,6 +49,7 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    outline: none;
 }
 
 @media (max-width: 648px) {

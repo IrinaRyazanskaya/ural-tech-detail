@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Divider } from '../../components/divider';
+import { RequestModal } from '../../components/request-modal';
+import { CallModal } from '../../components/call-modal/call-modal';
 import './home.css';
 import iconCallSrc from './call-icon.svg';
 import iconDetailSrc from './detail-icon.svg';
@@ -13,6 +16,27 @@ import iconTrophySrc from './trophy-icon.svg';
 import iconTruckSrc from './truck-icon.svg';
 
 function Home() {
+    const [isRequestModalOpen, setRequestModalOpen] = useState(false);
+   
+    const handleRequestClick = () => {
+        setRequestModalOpen(true);
+    }
+
+    const closeRequestModal = () => {
+        setRequestModalOpen(false);
+    }
+
+    const [isCallModalOpen, setCallModalOpen] = useState(false);
+
+    const handleCallClick = () => {
+        setCallModalOpen(true);
+    }
+
+    const closeCallModal = () => {
+        setCallModalOpen(false);
+    }
+
+
     return (
         <article className="home">
             <section className="home__section">
@@ -74,7 +98,10 @@ function Home() {
                         />
                         <span className="home__price-list">СМОТРЕТЬ ПРАЙС-ЛИСТ</span>
                     </a>
-                    <button className="home__action-button">
+                    <button 
+                        className="home__action-button"
+                        onClick={handleRequestClick}
+                    >
                         <img 
                             className="home__action-icon"
                             src={iconRequestSrc}
@@ -82,7 +109,11 @@ function Home() {
                         />
                         ОТПРАВИТЬ ЗАЯВКУ
                     </button>
-                    <button className="home__action-button">
+                    {isRequestModalOpen && <RequestModal onClose={closeRequestModal} />}
+                    <button 
+                        className="home__action-button"
+                        onClick={handleCallClick}
+                    >
                         <img 
                             className="home__action-icon"
                             src={iconCallSrc}
@@ -90,6 +121,7 @@ function Home() {
                         />
                         ЗАКАЗАТЬ ЗВОНОК
                     </button>
+                    {isCallModalOpen && <CallModal onClose={closeCallModal} />}
                 </div>
             </section>
             <Divider />

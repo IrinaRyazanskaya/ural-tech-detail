@@ -67,6 +67,7 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    outline: none;
 }
 
 .header__actions {
