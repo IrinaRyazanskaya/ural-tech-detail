@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { RequestModal } from '../request-modal';
 import { CallModal } from '../call-modal';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './footer.css';
 import iconPriceSrc from './price-icon.svg';
 import iconRequestSrc from './request-icon.svg';
@@ -68,14 +69,26 @@ function Footer() {
                 {isCallModalOpen && <CallModal onClose={closeCallModal} />}
             </div>
             <div className="footer__links">
-                <Link className="footer__link" to="/about">Информация о компании</Link>
-                <Link className="footer__link" to="/delivery">Доставка и оплата</Link>
-                <Link className="footer__link" to="/guarantees">Гарантии и возврат</Link>
+                <HashLink className="footer__link" smooth to="/about#top">
+                    Информация о компании
+                </HashLink>
+                <HashLink className="footer__link" smooth to="/delivery#top">
+                    Доставка и оплата
+                </HashLink>
+                <HashLink className="footer__link" smooth to="/guarantees#top">
+                    Гарантии и возврат
+                </HashLink>
             </div>
             <div className="footer__links">
-                <Link className="footer__link" to="/details">Реквизиты компании</Link>
-                <Link className="footer__link" to="/cooperation">Сотрудничество</Link>
-                <Link className="footer__link" to="/contacts">Контактная информация</Link>
+                <HashLink className="footer__link" smooth to="/details#top">
+                    Реквизиты компании
+                </HashLink>
+                <HashLink className="footer__link" smooth to="/cooperation#top">
+                    Сотрудничество
+                </HashLink>
+                <HashLink className="footer__link" smooth to="/contacts#top">
+                    Контактная информация
+                </HashLink>
             </div>
             <div className="footer__contacts">
                 <div className="footer__phones">
