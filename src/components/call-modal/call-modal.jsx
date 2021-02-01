@@ -39,7 +39,7 @@ function CallModal(props) {
                     />
                     <p className="call-modal__form-text">
                         Отправляя данную форму, я подтверждаю, что ознакомлен с&nbsp;
-                    <a className="call-modal__form-link" href="">
+                    <a className="call-modal__form-link" target="_blank" href="/privacy">
                             политикой конфиденциальности
                     </a>
                     &nbsp;и согласен на хранение и обработку персональных данных.

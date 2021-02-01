@@ -52,6 +52,7 @@
 .header__action-link:hover,
 .header__action-button:hover  {
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .header__action-link,
