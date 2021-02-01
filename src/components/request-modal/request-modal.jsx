@@ -80,7 +80,7 @@ function RequestModal(props) {
                     </textarea>
                     <p className="request-modal__form-text">
                         Отправляя данную форму, я подтверждаю, что ознакомлен с&nbsp;
-                    <a className="request-modal__form-link" href="">
+                    <a className="request-modal__form-link" target="_blank" href="/privacy">
                             политикой конфиденциальности
                     </a>
                     &nbsp;и согласен на хранение и обработку персональных данных.

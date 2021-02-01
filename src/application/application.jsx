@@ -14,6 +14,7 @@ import { Details } from '../pages/company-details';
 import { Cooperation } from '../pages/cooperation';
 import { Delivery } from '../pages/delivery-and-payment';
 import { Home } from '../pages/home';
+import { Privacy } from '../pages/privacy';
 
 function Application() {
     const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
@@ -45,6 +46,9 @@ function Application() {
                     </Route>
                     <Route path="/contacts" exact>
                         <Contacts />
+                    </Route>
+                    <Route path="/privacy" exact>
+                        <Privacy />
                     </Route>
                 </Switch>
                 <Footer />
