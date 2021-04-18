@@ -9,7 +9,7 @@ function Details() {
                     Полное наименование	
                 </p>
                 <p className="details__description">
-                    Общество с ограниченной ответственностью  «УралТехДеталь»  
+                    Общество с ограниченной ответственностью торговый дом «УралТехДеталь»  
                 </p>
             </div>
             <div className="details__container">

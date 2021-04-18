@@ -118,6 +118,14 @@
     width: 158px;
 }
 
+.home__advantage-icon {
+    height: 116px;
+}
+
+.home__offer-icon {
+    height: 100px;
+}
+
 .home__advantage-text {
     margin-bottom: 0;
     text-align: center;
