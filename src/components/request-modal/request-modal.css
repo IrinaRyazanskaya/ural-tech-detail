@@ -118,6 +118,7 @@
 .request-modal__comment {
     width: 438px;
     padding: 10px;
+    resize: none;
 }
 
 .request-modal__field:focus,
