@@ -42,13 +42,14 @@ function RequestModal(props) {
                         <div className="request-modal__file-button">Выбрать</div>
                     </label>
                     <label className="request-modal__lable" htmlFor="name">
-                        Имя:
+                        Имя: <span className="request-modal__lable-required">*</span>
                 </label><br />
                     <input
                         className="request-modal__field"
                         type="text"
                         id="name"
                         name="name"
+                        required
                     /><br />
                     <label className="request-modal__lable" htmlFor="email">
                         E-mail: <span className="request-modal__lable-required">*</span>
