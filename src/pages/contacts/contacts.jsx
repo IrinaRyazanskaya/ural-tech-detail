@@ -61,9 +61,9 @@ function Contacts() {
             <div className="contacts__map-container">
                 <Map
                     className="contacts__map"
-                    defaultState={{ center: [55.104764, 60.132893], zoom: 15 }}
+                    defaultState={{ center: [55.105233, 60.133198], zoom: 17 }}
                 >
-                    <Placemark geometry={[55.104764, 60.132893]} />
+                    <Placemark geometry={[55.105233, 60.133198]} />
                     <GeolocationControl options={{ float: 'left' }} />
                     <ZoomControl options={{ float: 'right' }} />
                 </Map>
