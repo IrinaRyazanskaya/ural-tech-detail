@@ -12,9 +12,11 @@
 .home__main-image {
     display: flex;
     align-items: center;
-    margin-bottom: 26px;
     height: 500px;
-    background-color: #C4C4C4;
+    background-image: url("./main-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .home__main-card {
@@ -44,17 +46,18 @@
 }
 
 .home__text-container {
-    margin-bottom: 26px;
+    margin-bottom: 8px;
     width: 714px;
 }
 
 .home__header {
+    margin-bottom: 0px;
     font-size: 25px;
     line-height: 34px;
 }
 
 .home__text {
-    margin-bottom: 22px;
+    margin: 12px 0 20px 0;
     line-height: 24px;
 }
 
@@ -85,6 +88,10 @@
     font-size: 16px;
     font-weight: bold;
     color: #fff;
+}
+
+.home__action-link {
+    text-decoration: none;
 }
 
 .home__action-link:hover,
@@ -133,7 +140,7 @@
 
 .home__offers-container {
     display: flex;
-    margin-top: 20px;
+    margin-top: 26px;
 }
 
 .home__offer {
@@ -143,6 +150,7 @@
 }
 
 .home__offer-text {
+    margin-bottom: 0;
     width: 214px;
     text-align: center;
 }
@@ -208,24 +216,27 @@
     }
 
     .home__main-image {
-        margin-bottom: 0;
-        height: 230px;
+        background: none;
+        height: 200px;
     }
 
     .home__main-card {
-        width: 328px;
-        height: 173px;
-        margin-left: 22px;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        border-radius: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .home__company-name {
-        margin: 0px 0 4px 12px;
+        margin: 0 0 4px 20px;
         font-size: 22px;
     }
     
     .home__facts-list {
-        margin: 0 auto;
-        padding-left: 24px;
+        margin: 0 12px 0 0;
+        padding-left: 32px;
         font-size: 12px;
         line-height: 24px;
     }
@@ -236,7 +247,7 @@
     }
 
     .home__header {
-        margin: 12px 0;
+        margin-top: 12px;
         font-size: 20px;
         line-height: 26px;
     }
@@ -270,6 +281,10 @@
         flex-wrap: wrap;
         margin-top: 10px;
     }
+
+    .home__offer-text {
+        margin-bottom: 12px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -283,12 +298,6 @@
 }
 
 @media (max-width: 365px) {
-    .home__main-card {
-        width: 294px;
-        height: 172px;
-        margin-left: 14px;
-    }
-
     .home__facts-list {
         line-height: 18px;
     }
