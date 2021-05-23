@@ -118,6 +118,7 @@ function RequestModal(props) {
           <a
             className="request-modal__form-link"
             target="_blank"
+            rel="noreferrer"
             href="/privacy"
           >
             политикой конфиденциальности

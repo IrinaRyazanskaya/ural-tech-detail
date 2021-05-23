@@ -65,6 +65,7 @@
   background-color: rgba(196, 196, 196, 0.1);
   border: 1px solid rgba(196, 196, 196, 0.7);
   border-radius: 2px;
+  -webkit-appearance: none;
 }
 
 .request-modal__field-file {
@@ -164,6 +165,7 @@
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+  -webkit-appearance: none;
 }
 
 .request-modal__send-button {
@@ -287,12 +289,12 @@
   .request-modal__comment {
     margin: 4px 0;
     padding: 4px;
-    width: 229px;
+    width: 232px;
     height: 50px;
   }
 
   .request-modal__form-text {
-    margin: 0 0 10px 0;
+    margin: 0 0 6px 0;
     font-size: 10px;
     line-height: 12px;
   }
@@ -312,6 +314,8 @@
   .request-modal__send-button {
     width: 108px;
     height: 36px;
+    text-align: center;
+    padding: 0;
   }
 
   .request-modal__failure,
@@ -328,11 +332,11 @@
   .request-modal__failure {
     margin-top: 30px;
   }
-  
+
   .request-modal__success {
     margin-top: 58px;
   }
-  
+
   .request-modal__pending {
     margin-top: 80px;
   }

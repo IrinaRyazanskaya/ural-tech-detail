@@ -60,7 +60,12 @@ function CallModal(props) {
         />
         <p className="call-modal__form-text">
           Отправляя данную форму, я подтверждаю, что ознакомлен с&nbsp;
-          <a className="call-modal__form-link" target="_blank" href="/privacy">
+          <a
+            className="call-modal__form-link"
+            target="_blank"
+            rel="noreferrer"
+            href="/privacy"
+          >
             политикой конфиденциальности
           </a>
           &nbsp;и согласен на хранение и обработку персональных данных.
@@ -103,7 +108,9 @@ function CallModal(props) {
         src={iconFailureSrc}
         alt="Грустный смайлик"
       />
-      <p className="call-modal__failure-subtext">Не получилось отправить Вашу заявку</p>
+      <p className="call-modal__failure-subtext">
+        Не получилось отправить Вашу заявку
+      </p>
       <button
         className="call-modal__failure-button"
         onClick={() => {
