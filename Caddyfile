@@ -1,5 +1,6 @@
 utd174.ru {
-    root * /srv
     file_server
+    root * /srv
     encode zstd gzip
+    try_files {path} index.html
 }
