@@ -1,3 +1,9 @@
+utd174.ru {
+    root * /srv
+    file_server
+    encode zstd gzip
+}
+
 запчастиурал74.рф {
     root * /srv
     file_server
