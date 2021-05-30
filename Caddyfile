@@ -3,9 +3,3 @@ utd174.ru {
     file_server
     encode zstd gzip
 }
-
-запчастиурал74.рф {
-    root * /srv
-    file_server
-    encode zstd gzip
-}
