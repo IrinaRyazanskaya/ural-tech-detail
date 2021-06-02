@@ -18,3 +18,9 @@ docker-run:
 		-p 8080:80 \
 		-p 8443:443 \
 		$(DOCKER_IMAGE):$(APP_VERSION)
+
+.PHONY: docker-deploy
+docker-deploy:
+	yc compute instance update-container \
+		--name utd-frontend \
+		--container-image $(DOCKER_IMAGE):$(APP_VERSION)
