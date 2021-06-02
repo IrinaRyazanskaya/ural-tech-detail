@@ -1,6 +1,6 @@
 DOCKER_IMAGE = cr.yandex/crp4javlgtod0hm1kcho/utd-frontend
 COMMIT_HASH = $(shell git rev-parse --short HEAD)
-APP_VERSION ?= $(USER)-$(COMMIT_HASH)
+APP_VERSION = $(COMMIT_HASH)
 
 .PHONY: docker-build
 docker-build:
